@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raimond Solar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    </head>
+  <body>
+
+    <div class="products-main-page">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark sticky-md-top">
+            <div class="container">
+              <a class="navbar-brand" href="/index.html">
+                <img src="./images/raimondsolartransparent.png" height="28" alt="raimond-solar-logo">
+                RAIMOND SOLAR
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <button type="button" class="btn-price nav-link" 
+                    data-bs-toggle="modal" data-bs-target="#priceModal">
+                        Get a Price
+                    </button>
+                </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Products section -->
+        
+        <section class="products-view">
+            <h2 class="display-5 py-5 text-center">PRODUCTS</h2>      
+          <div class="container">
+            <div class="row row-cols-1 
+            row-cols-md-3">
+              
+            <!-- card-1 -->  
+
+            <div class="col mb-4" >                
+                  <div class="card w-75 mx-auto">
+                    <img src="./images/street_lamp.jpeg"
+                    class="card-img-top" 
+                    height="300" alt="">
+                   <div class="card-body text-center">
+                     <h3 class="font-weight-normal">SOLAR STREET LAMP</h3>
+                                          
+                   </div>
+                   <button type="button" class="btn-details" data-bs-toggle="modal"
+                   data-bs-target="#cardOneModal">
+                    details
+                    </button>
+                 </div>
+               </div>                
+
+              <div class="col mb-4">
+                <div class="card w-75 mx-auto">
+                   <img src="./images/high_mast.jpeg"
+                   class="card-img-top" 
+                   height="300" alt="">
+                  <div class="card-body text-center">
+                    <h3 class="font-weight-normal">HIGH MAST 4-arms</h3>
+                    
+                  </div>
+                  <button type="button" class="btn-details" data-bs-target="#cardTwoModal"
+                  data-bs-toggle="modal">details</button>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card w-75 mx-auto">
+                   <img src="./images/solar submersible.png"
+                   class="card-img-top" 
+                   height="300" alt="">
+                  <div class="card-body text-center">
+                    <h3 class="font-weight-normal">SOLAR SUBMERSIBLE PUMP</h3>
+                    
+                  </div>
+                  <button type="button" class="btn-details" data-bs-toggle="modal"
+                  data-bs-target="#cardThreeModal">details</button>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card w-75 mx-auto">
+                   <img src="./images/solar_home_appliances.png"
+                   class="card-img-top" 
+                   height="300" alt="">
+                  <div class="card-body text-center">
+                    <h3 class="font-weight-normal">SOLAR HOME APPLIANCES</h3>
+                    
+                  </div>
+                  <button type="button" class="btn-details" data-bs-toggle="modal"
+                  data-bs-target="#cardFourModal">details</button>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card w-75 mx-auto">
+                   <img src="./images/high_mast_6.jpeg"
+                   class="card-img-top" 
+                   height="300" alt="">
+                  <div class="card-body text-center">
+                    <h3 class="font-weight-normal">HIGH MAST 6-arms</h3>
+                    
+                  </div>
+                  <button type="button" class="btn-details"
+                  data-bs-target="#cardFiveModal" data-bs-toggle="modal">details</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        
+        <!-- Modals -->
+
+        <!-- card 5 modal-->
+
+        <div class="modal" tabindex="-1" id="cardFiveModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">SOLAR HIGH MAST 6-arms model</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col">Contents</th>
+                      <th scope="col">Brand</th>
+                      <th scope="col">Warranty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     
+                      <td>125/150 wp Solar Panel <br>(Mono Crystalline)</td>
+                      <td>Raimond</td>
+                      <td>25 years</td>
+                    </tr>
+                    <tr>
+                    
+                      <td>Battery Lithium Ferro <br>(420/300 wh LiFePo4)</td>
+                      <td>Star/Okaya</td>
+                      <td>60 months</td>
+                    </tr>
+                    <tr>
+                  
+                      <td>42/30 watt LED Light</td>
+                      <td>Phillips</td>
+                      <td>60 months</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>MPPT(40/30 Ah) Charge controller <br>with censor</td>
+                      <td>Raimond</td>
+                      <td>60 months</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="modal-footer mx-auto">
+                <button type="button" class="btn-details" data-bs-toggle="modal"
+                data-bs-target="#priceModal">Get a Price</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 modal -->
+
+        <div class="modal" tabindex="-1" id="cardFourModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">SOLAR HIGH MAST 6-arms model</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Solar Home Appliances Lights and Fans</p>                
+              </div>
+              <div class="modal-footer mx-auto">
+                <button type="button" class="btn-details" data-bs-toggle="modal"
+                data-bs-target="#priceModal">Get a Price</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- card 3 modal -->
+
+        <div class="modal" tabindex="-1" id="cardThreeModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">SOLAR SUBMERSIBLE PUMP
+                  <br>(For Drinking and Agriculture)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col">Contents</th>
+                      <th scope="col">Brand</th>
+                      <th scope="col">Warranty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     
+                      <td>330 wp Solar Panel 48/24 volt <br>(Mono Crystalline)</td>
+                      <td>Raimond</td>
+                      <td>25 years</td>
+                    </tr>
+                    <tr>
+                    
+                      <td>1-3 HP Submersible Pump <br>(1/3 Phase)</td>
+                      <td>Raimond</td>
+                      <td>24 Months</td>
+                    </tr>
+                    <tr>
+                  
+                      <td>Solar Pump Controller (VFD)</td>
+                      <td>Raimond</td>
+                      <td>24 months</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td colspan="2">Iron filter, Arsenic filter, Smell filter</td>
+                      
+                      <td>24 months</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="modal-footer mx-auto">
+                <button type="button" class="btn-details" data-bs-toggle="modal"
+                data-bs-target="#priceModal">Get a Price</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 modal -->
+
+        <div class="modal" tabindex="-1" id="cardTwoModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">SOLAR HIGH MAST 4-arms model</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col">Contents</th>
+                      <th scope="col">Brand</th>
+                      <th scope="col">Warranty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     
+                      <td>125/150 wp Solar Panel <br>(Mono Crystalline)</td>
+                      <td>Raimond</td>
+                      <td>25 years</td>
+                    </tr>
+                    <tr>
+                    
+                      <td>Battery Lithium Ferro <br>(420/300 wh LiFePo4)</td>
+                      <td>Star/Okaya</td>
+                      <td>60 months</td>
+                    </tr>
+                    <tr>
+                  
+                      <td>42/30 watt LED Light</td>
+                      <td>Phillips</td>
+                      <td>60 months</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>MPPT(40/30 Ah) Charge controller with censor</td>
+                      <td>Raimond</td>
+                      <td>60 months</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="modal-footer mx-auto">
+                <button type="button" class="btn-details" data-bs-toggle="modal"
+                data-bs-target="#priceModal">Get a Price</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 1 modal -->
+
+        <div class="modal" tabindex="-1" id="cardOneModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">SOLAR STREET LAMP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col">Contents</th>
+                      <th scope="col">Brand</th>
+                      <th scope="col">Warranty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     
+                      <td>50-125 wp Solar Panel <br>(Mono Crystalline)</td>
+                      <td>Raimond</td>
+                      <td>25 years</td>
+                    </tr>
+                    <tr>
+                    
+                      <td>Battery Lithium Ferro <br>(120-300 wh LiFePo4)</td>
+                      <td>Star/Okaya</td>
+                      <td>60 months</td>
+                    </tr>
+                    <tr>
+                  
+                      <td>12-30 watt LED Light</td>
+                      <td>Phillips</td>
+                      <td>60 months</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>MPPT(10-30 Ah) Charge controller <br>with censor</td>
+                      <td>Raimond</td>
+                      <td>60 months</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="modal-footer mx-auto">
+                <button type="button" class="btn-details" data-bs-toggle="modal"
+                data-bs-target="#priceModal">Get a Price</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Get a Price modal -->
+
+        <div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cardModalLabel">Get a Price</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form action="https://formsubmit.co/bystmastaofficial@gmail.com" method="post">
+                  <input type="hidden" name="_subject" value="New Product Enquiry">
+                  <input type="text" name="_honey" style="display:none">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="http://raimondsolar.com/index.html">
+
+                  <div class="mb-3">
+                    <label for="yourName" class="form-label">Your Name</label>
+                    <input name="Name" type="text" class="form-control" id="yourName" placeholder="Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="getPriceEmail" class="form-label">Email Address</label>
+                    <input name="email" type="email" class="form-control" id="getPriceEmail" placeholder="example@email.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="getPricePhone" class="form-label">Phone Number</label>
+                    <input name="Phone Number" type="tel" class="form-control" id="getPricePhone" placeholder="Your Phone Number" required>
+                  </div>
+                  <div class="mb-3">
+                    <select name="Interested Product" class="form-select" aria-label="Interested Product Select"
+                    aria-placeholder="I'm Interested In">
+                      <option value="1">Solar Street Lamp</option>
+                      <option value="2">Solar High Mast 4-arms</option>
+                      <option value="3">Solar High Mast 6-arms</option>
+                      <option value="4">Solar Submersible Pump</option>
+                      <option value="5">Solar Appliances</option>
+                    </select>
+                  </div>
+  
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn-details mx-auto">Submit</button>
+                </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        <footer class="bg-dark footer-copyright py-3">
+          &copy; 2022 Raimond Solar. All rights reserved.
+        </footer>
+
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script>
+      const myModal = document.getElementById('myModal')
+      const myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+
+
+:root{
+    --primary:#7B0BC1;
+    --accent: #51C10B;
+    --text: hsl(0, 0%, 17%); 
+    --headings: hsl(0, 0%, 89%);
+    --primary-two: hsla(217, 92%, 5%, 0.9);
+    --button: hsl(277, 85%, 30%);
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--montserrat);
+}
+            
+
+            /*  HOME PAGE DESIGNS   */
+
+
+.landing-page{
+    background-image: url('/images/raimond-solar-cover-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--headings);
+}
+
+.navbar-nav li{
+    padding-left: 2rem;
+}
+
+.nav-link{
+    font-weight: 400;
+    color: var(--headings);
+}
+.nav-link:hover{
+    transform: translateY(-2px);
+    transition: 0.3s ease-in-out;
+    color: var(--headings);
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 80%;
+    color: var(--headings);
+    animation: transitionIn 0.7s ease-in;
+}
+.hero-text h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.hero-text p{
+    text-align: center;
+}
+
+.hero-text .btn-arrow{
+    background: none;
+    border: none;
+    opacity: 0.7;
+    margin-top: 1rem;
+    /*padding-left: 36rem;*/
+}
+
+.btn-arrow:hover{
+    opacity: 1;
+}
+
+footer{
+    color: var(--headings);
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+            /*  PRODUCTS PAGE DESIGNS   */
+
+.nav-item .btn-price{
+    color: var(--headings);
+    outline: 1px solid var(--headings);
+    border: none;
+    background: none;
+    border-radius: 5px;
+}
+
+.navbar-brand:hover{
+    color: var(--headings);
+}
+
+.btn-price:hover{
+    background: var(--headings);
+    color: var(--text);
+    transition: all 0.3s ease-in-out;
+}
+.card-body h3{
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.products-view{
+    animation: transitionIn 0.3s ease-in;
+}
+
+.btn-details{
+    /*display: block;
+    margin: 20px auto;*/
+    border: none;
+    font: var(--montserrat);
+    background: none;
+    height: 30px;
+    text-transform: capitalize;
+    outline: 1px solid var(--text);
+}
+.btn-details:hover{
+    color: var(--headings);
+    background: var(--text);
+    transition: 0.3s ease-in-out;
+}
+
+        /* Contact Us Form */
+
+input[type=textarea]{
+    resize: none;
+}
