@@ -41,7 +41,7 @@ body{
 
 
 .landing-page{
-    background-image: url('/images/raimond-solar-cover-photo.jpg');
+    background-image: url('../images/raimond-solar-cover-photo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
